@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import CardSkeleton from "./compoent/CardSkeleton";
+import ContactForm from "./compoent/ContactForm";
+import Footer from "./compoent/Footer";
+import SubscriptionsCard from "./compoent/SubscriptionsCard";
+import TeamSection from "./compoent/TeamSection";
+
+import HeaderLayout from "./layout/HeaderLayout";
+import Navigation from "./layout/Navigation";
+
+import { useRoutes } from "react-router-dom";
+import routes from "./router/router";
 
 function App() {
+  let element = useRoutes(routes);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-semibold">
+      {element}
+      {/* <Login />
+      <ResetPass />
+      <Register /> */}
+      {/* <HomePage /> */}
     </div>
   );
 }
