@@ -40,6 +40,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
-  },
-  "homepage": "http://thuanlevan72.github.io/themev1"
+  }
 }
